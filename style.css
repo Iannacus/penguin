@@ -1,0 +1,327 @@
+body {
+  font-family: 'Pacifico', cursive;
+}
+
+.texto {
+  text-align: center;
+  color: pink;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.btn{
+    width: 100%;
+  }
+  
+  button {
+    display: block;
+    margin: auto;
+    color: pink;
+    background-color: white;
+    border: solid 2px white;
+    border-radius: 10px;
+  }
+  
+  button:hover {
+    border: solid 2px pink;
+  }
+  
+  .penguin {
+  
+      /* Only change code below this line */
+      --penguin-skin: gray;
+      --penguin-belly: white;
+      --penguin-beak: orange;
+      /* Only change code above this line */
+  
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 5%;
+      width: 300px;
+      height: 300px;
+    }
+  
+    .penguin-top {
+      top: 10%;
+      left: 25%;
+      background: var(--penguin-skin, gray);
+      width: 50%;
+      height: 45%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .penguin-bottom {
+      top: 40%;
+      left: 23.5%;
+      background: var(--penguin-skin, gray);
+      width: 53%;
+      height: 45%;
+      border-radius: 70% 70% 100% 100%;
+    }
+  
+    .right-hand {
+      top: 0%;
+      left: -5%;
+      background: var(--penguin-skin, gray);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 120% 30%;
+      transform: rotate(45deg);    
+    }
+  
+  .animated {
+      z-index: -1;
+      animation: saludo 1s linear infinite;
+  }
+  
+  @keyframes saludo {
+    0% {
+      transform: rotate(50deg);
+    }
+    50%{
+      transform: rotate(130deg);
+    }
+    100%{
+      transform: rotate(50deg);
+    }
+    
+  }  
+  
+    .left-hand {
+      top: 0%;
+      left: 75%;
+      background: var(--penguin-skin, gray);
+      width: 30%;
+      height: 60%;
+      border-radius: 30% 30% 30% 120%;
+      transform: rotate(-45deg);
+      z-index: -1;
+    }
+  
+    .right-cheek {
+      top: 15%;
+      left: 35%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .left-cheek {
+      top: 15%;
+      left: 5%;
+      background: var(--penguin-belly, white);
+      width: 60%;
+      height: 70%;
+      border-radius: 70% 70% 60% 60%;
+    }
+  
+    .belly {
+      top: 60%;
+      left: 2.5%;
+      background: var(--penguin-belly, white);
+      width: 95%;
+      height: 100%;
+      border-radius: 120% 120% 100% 100%;
+    }
+  
+    .right-feet {
+      top: 85%;
+      left: 60%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(-80deg);
+      z-index: -2222;
+    }
+  
+    .left-feet {
+      top: 85%;
+      left: 25%;
+      background: var(--penguin-beak, orange);
+      width: 15%;
+      height: 30%;
+      border-radius: 50% 50% 50% 50%;
+      transform: rotate(80deg);
+      z-index: -2222;
+    }
+  
+    .right-eye {
+      top: 45%;
+      left: 60%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .left-eye {
+      top: 45%;
+      left: 25%;
+      background: black;
+      width: 15%;
+      height: 17%;
+      border-radius: 50%;
+    }
+  
+    .sparkle {
+      top: 25%;
+      left: 15%;
+      background: white;
+      width: 35%;
+      height: 35%;
+      border-radius: 50%;
+    }
+  
+    .blush-right {
+      top: 65%;
+      left: 15%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .blush-left {
+      top: 65%;
+      left: 70%;
+      background: pink;
+      width: 15%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .beak-top {
+      top: 60%;
+      left: 40%;
+      background: var(--penguin-beak, orange);
+      width: 20%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    .beak-bottom {
+      top: 65%;
+      left: 42%;
+      background: var(--penguin-beak, orange);
+      width: 16%;
+      height: 10%;
+      border-radius: 50%;
+    }
+  
+    body {
+      background:#c6faf1;
+    }
+  
+    .penguin * {
+      position: absolute;
+    }
+  
+  .back {
+      display: none;
+      position: fixed;
+      padding: 0;
+      margin: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      animation: backdiv 1s linear infinite;
+    }
+  
+    .heart {
+      display: none;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: pink;
+      height: 50px;
+      width: 50px;
+      transform: rotate(-45deg);
+      animation: beat 1.5s linear infinite;
+    }
+    .heart:after {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+    .heart:before {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+  
+    @keyframes backdiv {
+      50% {
+        background: #ffe6f2;
+      }
+    }
+  
+    @keyframes beat {
+      0% {
+        transform: scale(0.3) rotate(-45deg);
+      }
+      50% {
+        transform: scale(2) rotate(-45deg);
+      }
+    }
+  
+    .smallHeart {
+      position: absolute;
+      margin: auto;
+      bottom:0;
+      left: 0;
+      background-color: pink;
+      height: 50px;
+      width: 50px;
+      opacity: 0;
+      transform: rotate(-45deg);
+      animation: upHeart 3s ease-in-out forwards;
+    }
+    .smallHeart:after {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: 0px;
+      left: 25px;
+    }
+    .smallHeart:before {
+      background-color: pink;
+      content: "";
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      top: -25px;
+      left: 0px;
+    }
+  
+  @keyframes upHeart {
+    0%{
+      bottom: 0;
+      opacity: 0;
+    }
+    100%{
+      bottom: 100%;
+      opacity: 1;
+    }
+  }
