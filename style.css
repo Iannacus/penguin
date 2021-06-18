@@ -292,7 +292,7 @@ body {
       width: 50px;
       opacity: 0;
       transform: rotate(-45deg);
-      animation: upHeart 3s ease-in-out forwards;
+      animation: upHeart 3s ease-in-out infinite;
     }
     .smallHeart:after {
       background-color: pink;
