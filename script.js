@@ -28,22 +28,22 @@ const pinguino = `<div class="penguin-bottom">
   </div>`
 
 action.addEventListener('click', () => {
-    penguin.innerHTML = pinguino;
-    setTimeout(() => {
-        heart.style.display = 'block';
-    }, 2000);
-    setTimeout(() => {
-        back.style.display = 'block';
-        heart.style.display = 'none';
-        heartGenerator(30);
-    }, 5000)
+  penguin.innerHTML = pinguino;
+  setTimeout(() => {
+    heart.style.display = 'block';
+  }, 2000);
+  setTimeout(() => {
+    back.style.display = 'block';
+    heart.style.display = 'none';
+    heartGenerator(30);
+  }, 5000)
 });
 
 function heartGenerator(c) {
-    for (let i = 0; i <= c; i++) {
-        h.push(`<div class="smallHeart" style="animation-delay: ${i * 0.05}s; left: ${Math.random() * 100}%"></div>`);
-    }
-    back.style.display = 'none';
-    heartArea.innerHTML = h;
-    texto.innerHTML = '<h1>Te amo mi pingüinita hermosa <br> 16 Meses Increibles a tu lado'
+  for (let i = 0; i <= c; i++) {
+    h.push(`<div class="smallHeart" style="animation-delay: ${0 + Math.random() * i * 333}s; left: ${Math.random() * 100}%"></div>`);
+  }
+  back.style.display = 'none';
+  heartArea.innerHTML = h;
+  texto.innerHTML = '<h1>Te amo mi pingüinita hermosa <br> 16 Meses Increibles a tu lado'
 }
