@@ -41,7 +41,7 @@ action.addEventListener('click', () => {
 
 function heartGenerator(c) {
   for (let i = 0; i <= c; i++) {
-    h.push(`<div class="smallHeart" style="animation-delay: ${0 + Math.random() * i * 333}s; left: ${Math.random() * 100}%"></div>`);
+    h.push(`<div class="smallHeart" style="animation-delay: ${0 + Math.random() * i * 0.666}s; left: ${Math.random() * 100}%"></div>`);
   }
   back.style.display = 'none';
   heartArea.innerHTML = h;
